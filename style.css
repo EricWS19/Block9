@@ -1,0 +1,79 @@
+img {width: 500px; padding: 5px; color: grey; display: inline-block;}
+::backdrop {color: gray;}
+
+h1 {background-origin: padding-box 15px 5px 15px 5px;}
+
+h2 {color: yellow;}
+
+h3 {color: yellow}
+
+body { background-color: grey; display: flex; justify-content: center;min-height: 100vh; flex-direction: column;}
+
+
+
+.sun {
+    height: 300px;
+    width: 300px;
+    background-color: yellow;
+border-radius: 100%;
+margin: 5%;}
+* { 
+    margin: 2.5px;
+    padding: 2.5px;
+    box-sizing: border-box;
+}
+
+.gallery {display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px;
+width: 80%;
+height: 400px;
+margin-bottom: 20px;}
+
+.bat {
+    width:150px; 
+    height: 100px;
+    background-color: red;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.triangle {
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid gray;
+    z-index: 3;
+}
+
+.rectangle {
+    width: 200px;
+    height: 100px;
+    background-color: chartreuse;
+    z-index: 2;
+}
+
+@media (min-width: 480px) {
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+        background-color: darkgrey;
+    }
+}
+
+.contact-form { 
+    display: flex ;
+    flex-direction: column;
+    gap: 5px;
+    width: 300px;
+}
+input, button {
+    padding:7.5px;
+    font-size: 18px;
+}
+
+h1 {font-family: Arial, Helvetica, sans-serif; font-size: 36pt; justify-content: center;          
+} 
+
+.sun >div{background-color: black;}
+
+
+
