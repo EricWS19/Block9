@@ -1,26 +1,44 @@
 img {width: 500px; padding: 5px; color: grey; display: inline-block;}
 ::backdrop {color: gray;}
 
-h1 {background-origin: padding-box 15px 5px 15px 5px;}
+h1 {
+    font-family: "Playfair Display", serif;
+    font-size: 2.8em;
+    font-weight: bold;
+    font-style: italic;
+    text-transform: capitalize;
+    line-height: 1.2;
+    letter-spacing: 1px;
+  background-origin: padding-box 15px 5px 15px 5px; color: rgb(248, 248, 255);
+  padding: 20px; 
+  display: flex; flex-direction: column-reverse;
+}
 
+.summary {
+    border:1px solid yellow; 
+    height: 275px;
+    width: 300px;
+    background-color: rgb(11, 11, 34);
+}
 h2 {color: yellow;}
 
 h3 {color: yellow}
 
-body { background-color: grey; display: flex; justify-content: center;min-height: 100vh; flex-direction: column;}
+body { 
+        background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/984ed8d1-67d6-4cfe-b428-83b18b6ce3e9/d6alctp-ab58d8b1-6cba-46eb-a14e-9d2d71dcd052.png/v1/fill/w_1192,h_670/batman_inspired_background_by_ziro_talent_d6alctp-pre.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTA4MCIsInBhdGgiOiJcL2ZcLzk4NGVkOGQxLTY3ZDYtNGNmZS1iNDI4LTgzYjE4YjZjZTNlOVwvZDZhbGN0cC1hYjU4ZDhiMS02Y2JhLTQ2ZWItYTE0ZS05ZDJkNzFkY2QwNTIucG5nIiwid2lkdGgiOiI8PTE5MjAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.3bsQIIIfXZy7ZccIi0VvVZovc4JNGHpkT99hF9aEi-0); 
+}
 
+.navigation a {background-color: darkgrey;
+    border:1px solid yellow; 
+    height: 50px;
+    width: 100px;
+    background-color: rgb(110, 110, 114);
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-size:x-large;
+    display: flex;
+    flex-direction: row;
 
-
-.sun {
-    height: 300px;
-    width: 300px;
-    background-color: yellow;
-border-radius: 100%;
-margin: 5%;}
-* { 
-    margin: 2.5px;
-    padding: 2.5px;
-    box-sizing: border-box;
 }
 
 .gallery {display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px;
@@ -28,29 +46,75 @@ width: 80%;
 height: 400px;
 margin-bottom: 20px;}
 
-.bat {
-    width:150px; 
+.batman-logo {
+    width: 150px;
     height: 100px;
-    background-color: red;
-    border-radius: 50%;
-    z-index: 1;
-}
-
-.triangle {
+    position: relative;
+    background-color: black;
+    clip-path: polygon(
+      50% 0%,
+      10% 30%,
+      30% 50%,
+      10% 70%,
+      50% 100%,
+      90% 70%,
+      70% 50%,
+      90% 30%
+    );
+  }
+  
+  .batman-wings {
     width: 0;
     height: 0;
-    border-left: 50px solid transparent;
-    border-right: 50px solid transparent;
-    border-bottom: 100px solid gray;
-    z-index: 3;
-}
-
-.rectangle {
-    width: 200px;
-    height: 100px;
-    background-color: chartreuse;
-    z-index: 2;
-}
+    border-left: 75px solid transparent;
+    border-right: 75px solid transparent;
+    position: absolute;
+  }
+  
+  .wing-left {
+    border-bottom: 60px solid black;
+    top: 0;
+    left: 0;
+    transform: rotate(-20deg);
+  }
+  
+  .wing-right {
+    border-bottom: 60px solid black;
+    top: 0;
+    right: 0;
+    transform: rotate(20deg);
+  }
+  
+  .head {
+    width: 40px;
+    height: 30px;
+    background-color: black;
+    border-radius: 50%;
+    position: absolute;
+    top: 30px;
+    left: 55px;
+  }
+  
+  .ears {
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 15px solid black;
+    position: absolute;
+  }
+  
+  .ear-left {
+    top: 15px;
+    left: 45px;
+    transform: rotate(-30deg);
+  }
+  
+  .ear-right {
+    top: 15px;
+    right: 45px;
+    transform: rotate(30deg);
+  }
 
 @media (min-width: 480px) {
     .gallery {
@@ -76,4 +140,4 @@ h1 {font-family: Arial, Helvetica, sans-serif; font-size: 36pt; justify-content:
 .sun >div{background-color: black;}
 
 
-
+.submitBox {text-align: center;}
