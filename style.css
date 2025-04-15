@@ -141,3 +141,8 @@ h1 {font-family: Arial, Helvetica, sans-serif; font-size: 36pt; justify-content:
 
 
 .submitBox {text-align: center;}
+
+.portfolio-blurb {
+ color: rgb(243, 229, 30);
+ background-color: dimgray;
+}
