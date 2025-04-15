@@ -145,4 +145,7 @@ h1 {font-family: Arial, Helvetica, sans-serif; font-size: 36pt; justify-content:
 .portfolio-blurb {
  color: rgb(243, 229, 30);
  background-color: dimgray;
+ display: flex;
+ flex-direction: column;
+ margin-left: 100px;
 }
