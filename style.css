@@ -1,151 +1,279 @@
-img {width: 500px; padding: 5px; color: grey; display: inline-block;}
-::backdrop {color: gray;}
+@media(max-width: 800px){
+html {
+
+}
+ 
+}
+
+@import url('https://fonts.cdnfonts.com/css/batman-forever');
+                
+
+img {
+  width: 500px;
+  padding: 10px;
+  color: grey;
+  display: inline-block;
+  border: 2px solid yellow;
+  border-color: yellow;
+  /* border-radius: 5%; */
+}
 
 h1 {
-    font-family: "Playfair Display", serif;
-    font-size: 2.8em;
-    font-weight: bold;
-    font-style: italic;
-    text-transform: capitalize;
-    line-height: 1.2;
-    letter-spacing: 1px;
-  background-origin: padding-box 15px 5px 15px 5px; color: rgb(248, 248, 255);
-  padding: 20px; 
-  display: flex; flex-direction: column-reverse;
+  /* font-family: 'BatmanForeverOutline', sans-serif; */
+  font-family: 'BatmanForeverAlternate', sans-serif;
+  font-size: 2.8em;
+  font-weight: bold;
+  font-style: italic;
+  text-transform: capitalize;
+  line-height: 1.2;
+  letter-spacing: 1px;
+  color: rgb(235, 220, 11);
+  padding: 20px;
+  display: flex;
+  flex-direction: column-reverse;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  text-decoration: underline;
+  text-decoration-color: yellow;
+  background-color: gray !important;
+  border: 20px solid rgb(11, 11, 34);
+
+
 }
 
 .summary {
-    border:1px solid yellow; 
-    height: 275px;
-    width: 300px;
-    background-color: rgb(11, 11, 34);
+  border: 1px solid rgb(95, 92, 91);
+  background-color: rgb(11, 11, 34);
+  color: yellow;
+  text-align: center;
+  display: flex;
+  flex-direction: row-reverse;
+  /* border-radius: 5%; */
+  margin-left: 40px;
+  ;
 }
-h2 {color: yellow;}
-
-h3 {color: yellow}
-
-body { 
-        background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/984ed8d1-67d6-4cfe-b428-83b18b6ce3e9/d6alctp-ab58d8b1-6cba-46eb-a14e-9d2d71dcd052.png/v1/fill/w_1192,h_670/batman_inspired_background_by_ziro_talent_d6alctp-pre.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTA4MCIsInBhdGgiOiJcL2ZcLzk4NGVkOGQxLTY3ZDYtNGNmZS1iNDI4LTgzYjE4YjZjZTNlOVwvZDZhbGN0cC1hYjU4ZDhiMS02Y2JhLTQ2ZWItYTE0ZS05ZDJkNzFkY2QwNTIucG5nIiwid2lkdGgiOiI8PTE5MjAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.3bsQIIIfXZy7ZccIi0VvVZovc4JNGHpkT99hF9aEi-0); 
+h2 {
+  color: yellow;
+  font-family: 'Satisfy', cursive;
+  font-size: 40px;
+  font-weight: 100;
+  text-shadow: 1px 1px 2px black;
+  text-align: center;
+  margin-top: 4em;
+  background-color: rgb(11, 11, 34);
+  border: 2.5px solid yellow;
+  /* border-radius: 40; */
+  margin-left: 50px;
+  margin-right: 50px;
+  padding: 50px;
+  font-family: 'BatmanForeverAlternate', sans-serif;
 }
 
-.navigation a {background-color: darkgrey;
-    border:1px solid yellow; 
-    height: 50px;
-    width: 100px;
-    background-color: rgb(110, 110, 114);
-    font-family: Arial, Helvetica, sans-serif;
-    font-style: italic;
-    font-size:x-large;
-    display: flex;
-    flex-direction: row;
+h3 {
+  color: yellow;
+  font-family: 'BatmanForeverAlternate', sans-serif;
+}
+
+body {
+  background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/984ed8d1-67d6-4cfe-b428-83b18b6ce3e9/d6alctp-ab58d8b1-6cba-46eb-a14e-9d2d71dcd052.png/v1/fill/w_1192,h_670/batman_inspired_background_by_ziro_talent_d6alctp-pre.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTA4MCIsInBhdGgiOiJcL2ZcLzk4NGVkOGQxLTY3ZDYtNGNmZS1iNDI4LTgzYjE4YjZjZTNlOVwvZDZhbGN0cC1hYjU4ZDhiMS02Y2JhLTQ2ZWItYTE0ZS05ZDJkNzFkY2QwNTIucG5nIiwid2lkdGgiOiI8PTE5MjAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.3bsQIIIfXZy7ZccIi0VvVZovc4JNGHpkT99hF9aEi-0);
+  background-repeat: repeat;
+}
+
+.navigation a {
+  background-color: rgb(11, 11, 34);
+  border: 1px solid yellow;
+  height: 30px;
+  width: 650px;
+  background-color: rgb(11, 11, 34);
+  font-family: 'BatmanForeverAlternate', sans-serif;
+  font-style: italic;
+  font-size: x-large;
+  display: flex;
+  flex-direction: column;
+  color: yellow;
+  align-items: center;
+  
 
 }
 
-.gallery {display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px;
-width: 80%;
-height: 400px;
-margin-bottom: 20px;}
+.gallery {
+  /* display: grid;
+  grid-template-columns: repeat(3, 1fr); */
+  gap: 20px;
+  /* width: 80%;
+  height: 400px; */
+  margin-bottom: 20px;
+}
 
 .batman-logo {
-    width: 150px;
-    height: 100px;
-    position: relative;
-    background-color: black;
-    clip-path: polygon(
-      50% 0%,
-      10% 30%,
-      30% 50%,
-      10% 70%,
-      50% 100%,
-      90% 70%,
-      70% 50%,
-      90% 30%
-    );
-  }
-  
-  .batman-wings {
-    width: 0;
-    height: 0;
-    border-left: 75px solid transparent;
-    border-right: 75px solid transparent;
-    position: absolute;
-  }
-  
-  .wing-left {
-    border-bottom: 60px solid black;
-    top: 0;
-    left: 0;
-    transform: rotate(-20deg);
-  }
-  
-  .wing-right {
-    border-bottom: 60px solid black;
-    top: 0;
-    right: 0;
-    transform: rotate(20deg);
-  }
-  
-  .head {
-    width: 40px;
-    height: 30px;
-    background-color: black;
-    border-radius: 50%;
-    position: absolute;
-    top: 30px;
-    left: 55px;
-  }
-  
-  .ears {
-    width: 0;
-    height: 0;
-    border-left: 10px solid transparent;
-    border-right: 10px solid transparent;
-    border-bottom: 15px solid black;
-    position: absolute;
-  }
-  
-  .ear-left {
-    top: 15px;
-    left: 45px;
-    transform: rotate(-30deg);
-  }
-  
-  .ear-right {
-    top: 15px;
-    right: 45px;
-    transform: rotate(30deg);
-  }
+  width: 150px;
+  height: 100px;
+  position: relative;
+  background-color: black;
+  clip-path: polygon(
+    50% 0%,
+    10% 30%,
+    30% 50%,
+    10% 70%,
+    50% 100%,
+    90% 70%,
+    70% 50%,
+    90% 30%
+  );
+}
+
+.batman-wings {
+  width: 0;
+  height: 0;
+  border-left: 75px solid transparent;
+  border-right: 75px solid transparent;
+  position: absolute;
+}
+
+.wing-left {
+  border-bottom: 60px solid black;
+  top: 0;
+  left: 0;
+  transform: rotate(-20deg);
+}
+
+.wing-right {
+  border-bottom: 60px solid black;
+  top: 0;
+  right: 0;
+  transform: rotate(20deg);
+}
+
+.head {
+  width: 40px;
+  height: 30px;
+  background-color: black;
+  /* border-radius: 50%; */
+  position: absolute;
+  top: 30px;
+  left: 55px;
+  display: flex;
+}
+
+.ears {
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 15px solid black;
+  position: absolute;
+}
+
+.ear-left {
+  top: 15px;
+  left: 45px;
+  transform: rotate(-30deg);
+}
+
+.ear-right {
+  top: 15px;
+  right: 45px;
+  transform: rotate(30deg);
+}
 
 @media (min-width: 480px) {
-    .gallery {
-        grid-template-columns: repeat(2, 1fr);
-        background-color: darkgrey;
-    }
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+    background-color: darkgrey;
+  }
 }
 
-.contact-form { 
-    display: flex ;
-    flex-direction: column;
-    gap: 5px;
-    width: 300px;
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  background-color: rgb(11, 11, 34);
+  color: yellow;
+  height: 375px;
+  width: 1215px;
+  justify-content: center;
+  margin-left: 350px;
+  margin-top: 250px;
+  border: 2.5px solid yellow;
+  font-size: 32pt;
+  font-family: 'BatmanForeverAlternate', sans-serif;
 }
-input, button {
-    padding:7.5px;
-    font-size: 18px;
+input,
+button {
+  padding: 7.5px;
+  font-size: px;
+  color: yellow;
+  border-color: yellow;
+  font-family: 'BatmanForeverAlternate', sans-serif;
 }
 
-h1 {font-family: Arial, Helvetica, sans-serif; font-size: 36pt; justify-content: center;          
-} 
+.sun > div {
+  background-color: black;
+}
 
-.sun >div{background-color: black;}
 
-
-.submitBox {text-align: center;}
 
 .portfolio-blurb {
- color: rgb(243, 229, 30);
- background-color: dimgray;
- display: flex;
- flex-direction: column;
- margin-left: 100px;
+  color: rgb(243, 229, 30);
+  background-color: dimgray;
+  display: flex;
+  flex-direction: column;
+  margin-left: 100px;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  padding: 5px;
+  justify-content: space-between;
+}
+.submitBox {
+  background-color: rgb (11, 11, 34);
+  text-align: center;
+  border-color: yellow;
+  position: absolute;
+  top: 80px;
+  left: 100px;
+
+}
+
+label {
+  border: 2px solid yellow;
+}
+footer {
+  background-color: rgb(11, 11, 34);
+  color: yellow;
+  text-align: center;
+  border: 2px solid yellow;
+  font-family: 'BatmanForeverAlternate', sans-serif;
+
+}
+
+.contactHeader {
+  border: 5px solid yellow;
+  background-color: rgb(11, 11, 34) !important;
+  text-align: center;
+}
+
+.contact-form-home {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  background-color: rgb(11, 11, 34);
+  color: yellow;
+  height: 120px;
+  width: 500px;
+  justify-content: center;
+  margin-left: -50px;
+  margin-top: 20px;
+  border: 2.5px solid yellow;
+  font-size: 32pt;
+  font-family: 'BatmanForeverAlternate', sans-serif;
+}
+
+.homeHeader {
+  font-size: 100pt;
+  text-decoration: none;
+  margin-top: 200px;
+  border-radius: 15%;
 }
